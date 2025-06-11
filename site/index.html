@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para o Amor da Minha Vida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop volume="0.4">
+    <source src="musicas/die-for-you.mp3" type="audio/mpeg" />
+  </audio>
+  <canvas id="hearts-canvas"></canvas>
+  <canvas id="flowers-canvas"></canvas>
+  <div class="container">
+    <h1>Para o Amor da Minha Vida 💖</h1>
+    <p class="intro">
+      Esse site é um presente simples, mas cheio de amor. Aqui estão nossos momentos, nossas músicas, e palavras que vêm do fundo do meu coração.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h2>Galeria</h2>
+        <p>Nossas melhores memórias juntas em fotos 💞</p>
+        <input type="file" id="photoUpload" accept="image/*" multiple />
+        <div id="gallery" class="gallery"></div>
+      </div>
+      <div class="card">
+        <h2>Trilha Sonora do Nosso Amor</h2>
+        <p>Músicas que são parte da nossa história 🎧</p>
+        <ul class="playlist">
+          <li>🎵 Die For You – The Weeknd</li>
+          <li>🎵 Heaven’s Divide – Donna Burke</li>
+          <li>🎵 Nuts – Lil Peep</li>
+          <li>🎵 Infrunami – Steve Lacy</li>
+          <li>🎵 Relax – Vacations</li>
+          <li>🎵 For the First Time – Mac DeMarco</li>
+          <li>🎵 When Will I See You Again – Shakka</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Carta pra Você</h2>
+        <p>Cartas interativas com escolhas 📝</p>
+        <button onclick="showLetter(0)">Carta 1</button>
+        <button onclick="showLetter(1)">Carta 2</button>
+        <button onclick="showLetter(2)">Carta 3</button>
+        <div id="letter-box" class="hidden"></div>
+      </div>
+      <div class="card">
+        <h2>🌟 Modo Surpresa!</h2>
+        <p>Uma pequena surpresa feita com todo amor 💝</p>
+        <button onclick="startSurprise()">Ativar Modo Surpresa</button>
+        <div id="surprise-box" class="hidden"></div>
+      </div>
+    </div>
+    <p class="footer">Feito com 💗 especialmente para você</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
