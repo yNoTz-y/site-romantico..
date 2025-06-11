@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffe4e6, #fbcfe8, #f9a8d4);
+  color: #881337;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease-out;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in;
+}
+
+.phrase {
+  font-size: 0.85rem;
+  color: #7f1d1d;
+  margin-top: 4px;
+  animation: fadeInUp 1s ease-in;
+}
+
+button {
+  background: #f43f5e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e11d48;
+}
+
+#love-letter {
+  margin-top: 15px;
+  background: #fff0f3;
+  padding: 15px;
+  border-radius: 15px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #be123c;
+  animation: fadeInUp 2s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+    #hearts-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+    #flowers-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -2;
+}
